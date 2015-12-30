@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/*
+ * 实例化之后,需要先默认一个frame
+ * setLabels之后会计算出实际的frame,然后在进行设置
+ *
+ **/
 @interface ListLabelsView : UIView
 // 初始化页面之后View的Size
 @property (nonatomic,readonly,assign)CGSize listViewSize;

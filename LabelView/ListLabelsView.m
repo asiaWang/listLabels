@@ -79,7 +79,7 @@ typedef NS_ENUM(NSInteger,ListLabelDataType) {
         return;
     }
     
-    NSInteger startCountWith = 0,startCountY = 0;
+    NSInteger startCountWith = 0,startCountY = 5;
     for (int i = 0 ; i < self.labelArray.count ; i++) {
         id object = self.labelArray[i];
         if ([object isKindOfClass:[NSArray class]]) {

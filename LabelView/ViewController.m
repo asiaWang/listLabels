@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ListLabelsView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    ListLabelsView *listView = [[ListLabelsView alloc]init];
+    listView.frame = CGRectMake(0, 100, self.view.frame.size.width, 200);
+    listView.backgroundColor = [UIColor greenColor];
+    [listView setLabels:@[@[@"12",@"233",@"4566",@"3245566",@"67547567567",@"3245566",@"67547567567",@"12",@"233",@"4566",@"3245566",@"67547567567"],@[@"123",@"是个",@"撒地方"]] textColors:@[]];
+    [self.view addSubview:listView];
+    listView.frame = CGRectMake(listView.frame.origin.x, listView.frame.origin.y, listView.frame.size.width, listView.listViewSize.height);
 }
 
 - (void)didReceiveMemoryWarning {

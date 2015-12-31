@@ -153,6 +153,8 @@ typedef NS_ENUM(NSInteger,ListLabelDataType) {
 - (CGRect)rectOfLabel:(UILabel *)label title:(NSString *)labelTitle {
     return [labelTitle boundingRectWithSize:CGSizeMake(MAIN_SCREEN_WIDTH, LABEL_HEIGHT) options:NSStringDrawingUsesFontLeading attributes:@{NSAttachmentAttributeName:[UIFont fontWithName:label.font.fontName size:label.font.pointSize]} context:nil];
 }
+
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
